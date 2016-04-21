@@ -219,6 +219,11 @@ declare module 'lodash' {
     sortBy<T>(array: ?Array<T>, iteratees?: Array<Iteratee<T>>): Array<T>;
     sortBy<T>(object: T, ...iteratees?: Array<OIteratee>): Array<any>;
     sortBy<T>(object: T, iteratees?: Array<OIteratee>): Array<any>;
+    sortByOrder<T>(
+      array: ?Array<OIteratee>,
+      iteratees?: Function | Object | string | Array<Function|Object|string>,
+      orders?: Array<'desc' | 'asc'> | Function | Array<Function>
+    ): Array<any>;
 
     // Date
     now(): number;
