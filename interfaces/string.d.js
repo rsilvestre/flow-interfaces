@@ -32,6 +32,7 @@ declare module 'string' {
     padRight: (len: number, char: ?string|number) =>String,
     parseCSV: (delimiter: string, qualifier: string, escape: string, lineDelimiter: string) => String;
     repeat: (n: number) => String,
+    replace: (subStr: RegExp|string, newSubStr: string|Function) => String,
     replaceAll: (ss: string, newstr: string) => String,
     restorePrototype: () => void,
     right: (n: number) => String,
