@@ -27,6 +27,7 @@ declare module 'string' {
     left: (n: number) => String,
     length: number,
     lines: Array<string>,
+    match: (prefix: RegExp) => Array<string>,
     pad: (len: number, char: ?string|number) =>String,
     padLeft: (len: number, char: ?string|number) =>String,
     padRight: (len: number, char: ?string|number) =>String,
