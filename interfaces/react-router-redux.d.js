@@ -3,7 +3,7 @@ declare module 'react-router-redux' {
     go: (number: number) => any;
     goBack: () => any;
     goForward: () => any;
-    push: (location: Object) => any;
+    push: (location: Object|string) => any;
     replace: (location: Object) => any;
     syncHistoryWithStore: (history: Object, state: any, options: ?{
       adjustUrlOnReplay?: boolean,
